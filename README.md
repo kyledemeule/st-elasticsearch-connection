@@ -8,6 +8,8 @@ Note: This uses Elastic Search version `7.10`. There are slight differences in t
 
 Connect like so:
 ```
+from st_elasticsearch_connection import ElasticSearchConnection
+
 conn = st.experimental_connection("elasticsearch", type=ElasticSearchConnection)
 ```
 
@@ -36,4 +38,4 @@ streamlit run app.py
 
 ## Setting up ElasticSearch
 
-You can run ES locally, or try a free tier at bonsai.io. This project uses the Kibana Sample web logs dataset.
+You can run ES locally, or try a free tier at [bonsai.io](https://bonsai.io/). This project uses the Kibana Sample web logs dataset.
